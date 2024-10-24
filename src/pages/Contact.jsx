@@ -49,7 +49,7 @@ export default function Contact() {
               <input type="checkbox" name="agree"  id="" />
               <label htmlFor="">Accept terms and conditions</label>
             </div>
-            <button className='text-white bg-black block mx-auto mt-8 px-4 py-1 rounded-md hover:scale-105' >Submi</button>
+            <button className='text-white bg-black block mx-auto mt-8 px-4 py-1 rounded-md hover:scale-105' >Submit</button>
         </form>
     </div>
   )
