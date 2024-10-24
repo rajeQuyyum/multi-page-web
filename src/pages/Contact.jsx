@@ -39,7 +39,7 @@ export default function Contact() {
 
             <input type="Name" name="user_name"  id="" placeholder=' Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
             <input type="Email" name="user_email" id="" placeholder='Email' className="w-full h-10 border rounded-md mb-3 px-2"  />
-            <input type="text" name="user_nextOfKin" id="" placeholder='Next of kin' className="w-full h-10 border rounded-md mb-3 px-2" />
+            <input type="text" name="user_nextKin" id="" placeholder='Next Kin' className="w-full h-10 border rounded-md mb-3 px-2" />
             <input type="text" name="user_lastName"  id="" placeholder='Last Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
             <input type="text" name="user_otherName"  id="" placeholder='Other Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
             <textarea type="message" name="message" id="" placeholder='Message' className="w-full h-[150px] border rounded-md mb-3 px-2 resize-none" ></textarea>
@@ -49,7 +49,7 @@ export default function Contact() {
               <input type="checkbox" name="agree"  id="" />
               <label htmlFor="">Accept terms and conditions</label>
             </div>
-            <button className='text-white bg-black block mx-auto mt-8 px-4 py-1 rounded-md hover:scale-105' >Send Message</button>
+            <button className='text-white bg-black block mx-auto mt-8 px-4 py-1 rounded-md hover:scale-105' >Submi</button>
         </form>
     </div>
   )
