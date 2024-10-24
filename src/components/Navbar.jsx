@@ -13,7 +13,7 @@ export default function Navbar() {
         <ul className={`flex flex-col md:flex-row justify-between  w-full md:w-[500px] bg-gray-500  items-center gap-2 md:bg-transparent text-2xl top-20 py-6 md:py-0   absolute md:static ${display ? 'left-0' : 'left-[-100%]'}`}>
             <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red]" to="/">Home</NavLink></li>
             <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red]" to="about">About</NavLink></li>
-            <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red]" to="contact">Aplication</NavLink></li>
+            <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red]" to="contact">Application</NavLink></li>
             <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red]" to="services">Services</NavLink></li>
             <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red] bg-green-400 rounded-md py-1 px-3" to="log">Contact</NavLink></li>
         </ul>

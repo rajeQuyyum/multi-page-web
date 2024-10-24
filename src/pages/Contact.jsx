@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <div className="flex justify-center py-12">
         <form action="" className='w-[90%] md:w-[700px]' onSubmit={submitForm}>
-            <h1 className="text-center font-semibold text-2xl mb-5">Contact <span className='text-orange-600'>Me</span></h1>
+            <h1 className="text-center font-semibold text-2xl mb-5">Application <span className='text-orange-600'>Form</span></h1>
 
             <input type="text" name="name" value={userData.name} id="" placeholder='full name' className="w-full h-10 border rounded-md mb-3 px-2" onChange={updateData} />
             <input type="text" name="nextOfKin" value={userData.nextOfKin} id="" placeholder='next of kin' className="w-full h-10 border rounded-md mb-3 px-2" onChange={updateData}/>
