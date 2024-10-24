@@ -1,64 +1,55 @@
-import React, { useState } from 'react'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 
 export default function Contact() {
 
-  const [userData, setUserData] = useState({
-    name: '',
-    nextOfKin: '',
-    lastName: '',
-    otherName:'',
-    YourMessage:'',
-    agree: false
-  })
+  const form = useRef();
 
-  function updateData(e){
-    const {name, value, type, checked} = e.target
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    setUserData(prev => {
-      return {...prev, [name]: type === "checkbox" ? checked : value}
-    })
-    
-  }
+    alert("successfully submited")
 
-  console.log(userData);
+    emailjs
+      .sendForm('service_mf3onfe', 'template_47uzenf', form.current, {
+        publicKey: 'BJpoc-Ljr9diUCcu2',
+      })
+      .then(
+        (Result) => {
+          console.log(Result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        },
+      );
+  };
+  
+  
 
-  function submitForm(e){
-    e.preventDefault()
-    setUserData({
-      name: '',
-      nextOfKin: '',
-      lastName: '',
-      otherName:'',
-      YourMessage:'',
-      agree: false,
-      language: ''
-    })
-  }
+
+
+  
   
   return (
     <div className="flex justify-center py-12">
-        <form action="" className='w-[90%] md:w-[700px]' onSubmit={submitForm}>
+        <form ref={form} onSubmit={sendEmail} action="" className='w-[90%] md:w-[700px]'>
             <h1 className="text-center font-semibold text-2xl mb-5">Application <span className='text-orange-600'>Form</span></h1>
 
-            <input type="text" name="name" value={userData.name} id="" placeholder='full name' className="w-full h-10 border rounded-md mb-3 px-2" onChange={updateData} />
-            <input type="text" name="nextOfKin" value={userData.nextOfKin} id="" placeholder='next of kin' className="w-full h-10 border rounded-md mb-3 px-2" onChange={updateData}/>
-            <input type="text" name="lastName" value={userData.lastName} id="" placeholder='last Name' className="w-full h-10 border rounded-md mb-3 px-2" onChange={updateData} />
-            <input type="text" name="otherName" value={userData.otherName} id="" placeholder='other Name' className="w-full h-10 border rounded-md mb-3 px-2" onChange={updateData} />
-            <textarea name="YourMessage" value={userData.YourMessage} id="" placeholder='Your Message' className='border w-full h-[150px] rounded-md py-3 px-3 resize-none' onChange={updateData}></textarea>
-            <select name="language" onChange={updateData} id="">
-              <option value="">--select language--</option>
-              <option value="html">html</option>
-              <option value="css">css</option>
-              <option value="js">javascript</option>
-              <option value="react">react js</option>
-            </select>
+            <input type="Name" name="user_name"  id="" placeholder=' Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
+            <input type="Email" name="user_email" id="" placeholder='Email' className="w-full h-10 border rounded-md mb-3 px-2"  />
+            <input type="text" name="user_nextOfKin" id="" placeholder='Next of kin' className="w-full h-10 border rounded-md mb-3 px-2" />
+            <input type="text" name="user_lastName"  id="" placeholder='Last Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
+            <input type="text" name="user_otherName"  id="" placeholder='Other Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
+            <textarea type="message" name="message" id="" placeholder='Message' className="w-full h-[150px] border rounded-md mb-3 px-2 resize-none" ></textarea>
+           
+           
             <div>
-              <input type="checkbox" name="agree" checked={userData.agree} onChange={updateData} id="" />
+              <input type="checkbox" name="agree"  id="" />
               <label htmlFor="">Accept terms and conditions</label>
             </div>
-            <button className='text-white bg-black block mx-auto mt-8 px-4 py-1 rounded-md hover:scale-105' disabled={!userData.agree}>Send Message</button>
+            <button className='text-white bg-black block mx-auto mt-8 px-4 py-1 rounded-md hover:scale-105' >Send Message</button>
         </form>
     </div>
   )
