@@ -10,7 +10,7 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    alert("successfully submited")
+    alert("Application Sent!")
 
     emailjs
       .sendForm('service_mf3onfe', 'template_47uzenf', form.current, {
