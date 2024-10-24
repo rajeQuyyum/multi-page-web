@@ -38,9 +38,9 @@ export default function Footer() {
       <h1 className='text-2xl'>Quick Links</h1>
       <li><NavLink to="/">Home</NavLink></li>
       <li><NavLink to="about">About</NavLink></li>
-      <li><NavLink to="contact">Contact</NavLink></li>
+      <li><NavLink to="contact">Application</NavLink></li>
       <li><NavLink to="services">Services</NavLink></li>
-      <li><NavLink to="log">Log in</NavLink></li>
+      <li><NavLink to="log">Contact</NavLink></li>
     </div>
 
     <div className=' list-none flex flex-col ga-2 mb-3 w-[150px]'>
