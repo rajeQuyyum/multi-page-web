@@ -42,6 +42,9 @@ export default function Contact() {
             <input type="text" name="user_nextKin" id="" placeholder='Next Kin' className="w-full h-10 border rounded-md mb-3 px-2" />
             <input type="text" name="user_lastName"  id="" placeholder='Last Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
             <input type="text" name="user_otherName"  id="" placeholder='Other Name' className="w-full h-10 border rounded-md mb-3 px-2"  />
+            <input type="text" name="user_phoneNo"  id="" placeholder='Phone No' className="w-full h-10 border rounded-md mb-3 px-2"  />
+            <input type="text" name="user_country"  id="" placeholder='Country' className="w-full h-10 border rounded-md mb-3 px-2"  />
+            <input type="text" name="user_state"  id="" placeholder='State' className="w-full h-10 border rounded-md mb-3 px-2"  />
             <textarea type="message" name="message" id="" placeholder='Message' className="w-full h-[150px] border rounded-md mb-3 px-2 resize-none" ></textarea>
            
            
