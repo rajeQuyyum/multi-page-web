@@ -16,7 +16,6 @@ export default function Navbar() {
             <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red]" to="contact">Application</NavLink></li>
             <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red]" to="services">Services</NavLink></li>
             <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red] bg-green-400 rounded-md py-1 px-3" to="log">Contact</NavLink></li>
-            <li onClick={() => setDisplay(prev => !prev)}><NavLink className="hover:text-[red] bg-green-400 rounded-md py-1 px-3" to="blance">Blance</NavLink></li>
         </ul>
 
         <i className='md:hidden text-4xl' onClick={() => setDisplay(prev => !prev)}><FaBars /></i>
