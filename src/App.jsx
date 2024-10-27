@@ -9,6 +9,7 @@ import Services from './pages/Services'
 import Log from './pages/Log'
 import NotFound from './pages/NotFound'
 import Footer from './pages/Footer'
+import Blance from './pages/Blance'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +24,7 @@ function App() {
         <Route path='services' element={<Services />} />
         <Route path='log' element= {<Log />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='blance' element={<Blance />} />
       </Routes>
       <Footer />
     </BrowserRouter>
