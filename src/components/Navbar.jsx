@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className='flex justify-around items-center py-[20px] px-[30px] bg-green-400   md:bg-gray-400 text-white'>
         <div>
-            <h1 className='font-extrabold text-5xl text-red-400'><span className='text-white'>Hello </span> Ashanti & Matt</h1>
+            <h1 className='font-extrabold text-5xl text-red-400'><span className='text-white'>RAJE </span> Q'</h1>
         </div>
 
         <ul className={`flex flex-col md:flex-row justify-between  w-full md:w-[500px] bg-gray-500  items-center gap-2 md:bg-transparent text-2xl top-20 py-6 md:py-0   absolute md:static ${display ? 'left-0' : 'left-[-100%]'}`}>
