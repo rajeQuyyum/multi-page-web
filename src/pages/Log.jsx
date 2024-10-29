@@ -17,6 +17,8 @@ export default function Log() {
       .then(
         (Result) => {
           console.log(Result.text);
+        e.target.reset()
+          
         },
         (error) => {
           console.log(error.text);

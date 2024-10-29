@@ -18,6 +18,8 @@ export default function Contact() {
       })
       .then(
         (Result) => {
+
+          e.target.reset()
           console.log(Result.text);
         },
         (error) => {
