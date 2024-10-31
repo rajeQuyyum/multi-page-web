@@ -47,7 +47,7 @@ export default function Contact() {
             <input type="text" name="user_phoneNo"  id="" placeholder='Phone No' required className="w-full h-10 border rounded-md mb-3 px-2"  />
             <input type="text" name="user_country"  id="" placeholder='Country' required className="w-full h-10 border rounded-md mb-3 px-2"  />
             <input type="text" name="user_state"  id="" placeholder='State' required className="w-full h-10 border rounded-md mb-3 px-2"  />
-            <textarea type="message" name="message" id="" placeholder='Message' required className="w-full h-[150px] border rounded-md mb-3 px-2 resize-none" ></textarea>
+            <textarea type="message" name="message" id="" placeholder='Message' className="w-full h-[150px] border rounded-md mb-3 px-2 resize-none" ></textarea>
            
            
             <div>
