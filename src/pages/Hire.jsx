@@ -9,7 +9,7 @@ export default function Hire() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    alert("Sent!!")
+    alert("Message Sent!!")
 
     emailjs
       .sendForm('service_mf3onfe', 'template_47uzenf', form.current, {
