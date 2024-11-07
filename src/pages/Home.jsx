@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Home() {
   return (
@@ -9,13 +10,21 @@ function Home() {
             <h2>I'm <span className='text-orange-600 italic'>Raje</span></h2>
             <h1>a Frontend Developer</h1>
         </div>
-        <p className=' text-6xl italic text-gray-600'>WEL<span className='text-red-300'>COME</span>!!!!</p>
+        <p className=' text-6xl italic text-gray-600 mb-5'>WEL<span className='text-red-300'>COME</span>!!!!</p>
+
+        <div className='list-none flex gap-3'>
+        <li><NavLink className="text-white bg-red-500 px-3 py-2 rounded-md" to="experience">Experience</NavLink></li>
+        <li><NavLink className="text-white bg-red-500 px-3 py-2 rounded-md" to="hire">Hire</NavLink></li>
+        </div>
+        
+        
        
         
     </div>
     <div className='w-[200px] sm:w-[390px]'>
         <img src="https://cdn-icons-png.flaticon.com/512/6840/6840478.png" className='w-full rounded-[50%] sm:rounded-[48%] h-[200px] sm:h-[500px]' alt="" />
     </div>
+
 
 
 </section>

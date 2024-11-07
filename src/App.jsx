@@ -9,6 +9,8 @@ import Services from './pages/Services'
 import Log from './pages/Log'
 import NotFound from './pages/NotFound'
 import Footer from './pages/Footer'
+import Experience from './pages/Experience'
+import Hire from './pages/Hire'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,6 +25,8 @@ function App() {
         <Route path='services' element={<Services />} />
         <Route path='log' element= {<Log />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='experience' element={<Experience />} />
+        <Route path='hire' element={<Hire />} />
       </Routes>
       <Footer />
     </BrowserRouter>
